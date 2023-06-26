@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Roboto:wght@100&family=Shadows+Into+Light&display=swap');
+
+:root {
+    --primary-color: #1c448e;
+    --secondary-color: #C6F4Fa;
+    --accent1-color: #2d6233;
+    --accent2-color: #00ccb1;
+
+    --heading-font: Anton, Impact, sans-serif;
+    --paragraph-font: Lato, Helvetica, sans-serif;
+    --callout-font: "Shadows Into Light", cursive;
+    
+    --nav-background-color: #C6F4FA;
+    --nav-link-color: #2d6233;
+    --nav-hover-link-color: #1c448e;
+    --nav-hover-background-color: #00ccb1;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent2-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color)
+}
+
+nav a:hover{
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color)
+}
