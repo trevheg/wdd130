@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Roboto:wght@100&family=Shadows+Into+Light&display=swap');
+
+:root {
+    --primary-color: #1c448e;
+    --secondary-color: #C6F4Fa;
+    --accent1-color: #2d6233;
+    --accent2-color: #00ccb1;
+
+    --heading-font: Anton, Impact, sans-serif;
+    --paragraph-font: Lato, Helvetica, sans-serif;
+    --callout-font: "Shadows Into Light", cursive;
+    
+    --nav-background-color: #C6F4FA;
+    --nav-link-color: #2d6233;
+    --nav-hover-link-color: #1c448e;
+    --nav-hover-background-color: #00ccb1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color)
+}
+
+nav a:hover{
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color)
+}
+
+.social-media img {
+    width: 3rem;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.hero {
+    width: 900px;
+    position: relative;
+    background-image: url("../images/rafting63_1024.jpg");
+    height: 600px;
+}
+
+
+.hero h1 {
+    background-color: var(--secondary-color);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.hero article {
+    background-color: var(--accent2-color);
+    height: 10rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.hero article img {
+    float: right;
+    height: 100%;
+    margin: 0;
+}
+.hero article p {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+}
