@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    width: 650px;
+}
+h1 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.5em;
+}
+h1,
+legend {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: darkblue;
+    
+}
+body {
+    /* width: 650px; */
+    padding: 1em;
+    font-size: 1.2em;
+}
+form {
+    display: grid;
+    /* align-items: center; */
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: .5rem;
+    width: 650px;
+    /* justify-content: center; */
+
+}
+fieldset {
+    display: grid;
+    text-align: center;
+    grid-gap: 1em;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+label,
+input,
+button,
+select,
+textarea {
+    
+    font-family: Helvetica, Arial, sans-serif;
+}
+label {
+    /* text-align: center; */
+    padding-right: 1rem;
+}
+input,
+select,
+textarea {
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+button {
+    margin: 1em;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.2em;
+    padding: .75em;
+    width: fit-content;
+    place-self: center;
+    
+}
+footer {
+    width: 650px;
+    color: #666;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    margin-top: 1rem;
+}
+.form-item {
+    display: grid;
+    align-items: center;
+    text-align: right;
+}
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin-bottom: 0.5em;
+}
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
