@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* width: 500px; */
+}
+h1,
+label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1 {
+    font-weight: 500;
+    color: navy;
+    padding: .5em;
+}
+b {
+    color: navy;
+    /* font-weight: 500; */
+}
+form {
+    display: grid;
+    gap: 0px;
+    padding: 1em;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: .5em;
+    width: 500px;
+}
+input,
+select {
+    height: 2em;
+}
+label {
+    border-bottom: 1em;
+}
+button {
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: .5em;
+    padding: .5em;
+    font-size: 1em;
+}
+footer {
+    width: 500px;
+    color: #666;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    margin-top: 1rem;
+}
+.example {
+    padding: 1em;
+    background-color: #333;
+    color: white;
+    margin: 0px 50px 1em;
+}
