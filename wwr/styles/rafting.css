@@ -24,12 +24,15 @@ body {
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
+    background-color: var(--accent1-color);
 }
 
 header {
     display: grid;
     grid-template-columns: 1fr 3fr;
     background-color: var(--nav-background-color);
+    border-radius: 1em;
+    margin-bottom: 1em;
 }
 
 nav {
@@ -55,7 +58,6 @@ p {
 }
 
 
-
 nav a:link, nav a:visited {
     color: var(--nav-link-color)
 }
@@ -64,7 +66,16 @@ nav a:hover{
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color)
 }
-
+section {
+    background-color: var(--secondary-color);
+    padding: 1em;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+section h1 {
+    display: block;
+    text-align: center;
+}
 .social-media img {
     width: 3rem;
 }
@@ -79,6 +90,7 @@ nav a:hover{
     background-image: url("../images/rafting63_1024.jpg");
     height: 600px;
     align-content: center;
+    border-radius: 1em;
 }
 
 
@@ -91,7 +103,7 @@ nav a:hover{
 }
 
 .hero article {
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
     height: 10rem;
     margin: 2rem;
     padding: 1rem;
@@ -108,7 +120,7 @@ nav a:hover{
 
 }
 .hero article p {
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
     color: var(--primary-color);
     margin: 0;
     padding: 0;
@@ -144,10 +156,65 @@ section h2 {
 }
 footer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     justify-content: space-between;
+    margin-top: 1em;
 }
 .social-media {
     display: flex;
     justify-content: flex-end;
 }
+.contact-info iframe{
+
+    border-radius: 1em; 
+    width: 100%;
+
+}
+.contact-info div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.2em;
+}
+
+.staff div {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.staff figure {
+    text-align: center;
+    flex: 1 1 0;
+    width: 0;
+}
+.staff img {
+    border-radius: 1em;
+}
+form {
+    display: grid;
+    gap: 0px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.purpose {
+    border: 0;
+    margin: 1em 0 1em 0;
+    padding: 0;
+}
+button {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 1em;
+    font-size: larger;
+    border-radius: 1em;
+}
+button:hover {
+    background-color: var(--accent1-color);
+}
+.subscribe {
+    display: flex;
+    align-items: start;
+    margin: 1em 0 1em 0;   
+}
+
+
