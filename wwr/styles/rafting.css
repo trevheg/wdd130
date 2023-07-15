@@ -25,6 +25,7 @@ body {
     max-width: 960px;
     padding: 20px;
     background-color: var(--accent1-color);
+    margin: auto;
 }
 
 header {
