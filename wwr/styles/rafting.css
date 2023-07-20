@@ -37,7 +37,7 @@ header {
 }
 
 nav {
-    font-size: 1.2rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -217,5 +217,24 @@ button:hover {
     align-items: start;
     margin: 1em 0 1em 0;   
 }
+/* .types-of-trips {
+} */
+.types-of-trips figure{
+    max-width: 300px;
+}
+.types-of-trips img {
+    max-width: 100%;
+}
 
 
+.types-of-trips div {
+    display: flex;
+    flex-wrap: wrap;
+}
+table {
+    width: 100%;
+    
+}
+tr:nth-child(even) {
+    background-color: var(--accent2-color);
+}
