@@ -88,13 +88,27 @@ section h1 {
 .hero {
     width: 100%;
     position: relative;
-    background-image: url("../images/rafting63_1024.jpg");
-    height: 600px;
+    background-image: url("../images/rafting63_1024a.jpg");
+    height: auto;
+    align-content: center;
+    border-radius: 1em;
+    padding: 1em;
+}
+.hero-index {
+    width: 100%;
+    position: relative;
+    background-image: url("../images/rafting63_1024a.jpg");
+    height: auto;
     align-content: center;
     border-radius: 1em;
 }
-
-
+.hero-index h1 {
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    color: var(--accent2-color);
+    font-size: 4rem;
+}
 .hero h1 {
     padding: 1rem;
     margin: 0;
@@ -188,7 +202,7 @@ footer {
     width: 0;
 }
 .staff img {
-    border-radius: 1em;
+    border-radius: .5em;
 }
 form {
     display: grid;
@@ -207,7 +221,7 @@ button {
     color: var(--accent2-color);
     padding: 1em;
     font-size: larger;
-    border-radius: 1em;
+    border-radius: .5em;
 }
 button:hover {
     background-color: var(--accent1-color);
@@ -224,17 +238,45 @@ button:hover {
 }
 .types-of-trips img {
     max-width: 100%;
+    border-radius: .5em;
 }
 
 
 .types-of-trips div {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    justify-items: center;
+    align-items: center;
 }
 table {
     width: 100%;
     
 }
-tr:nth-child(even) {
-    background-color: var(--accent2-color);
+
+.front-page-stuff {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    justify-items: center;
+    align-items: center;
+}
+.front-page-stuff img {
+    /* max-width: 300px; */
+    max-width: 100%;
+    border-radius: .5rem;
+}
+.front-page-stuff form, figure {
+    background-color: var(--secondary-color);
+    box-sizing: border-box;
+    margin: 1rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.front-page-stuff input {
+    height: 3em;
+    margin: 1em;
 }
